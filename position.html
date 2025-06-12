@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <style>
+            .parent{
+                background-color: black;
+                height: 500px;
+                width:500px;
+                position: relative;
+                transition: height 3s;
+                
+            }
+            .parent:hover{
+                height:700px;
+            }
+            .child1{
+                background-color: rgb(216, 216, 30);
+                height: 400px;
+                width:400px;
+                position: relative;
+                left: 50px;
+                top: 25px;
+                transition: width 4s;
+               
+                
+            }
+            .child1:hover{
+                width: 800px;
+            }
+            .child2{
+                background-color: aqua;
+                height: 300px;
+                width:300px;
+                border-radius: 40px;
+                position: relative;
+                bottom: 350px;
+                left: 100px;
+                animation: abc;
+                animation-duration: 10s;
+                
+            }
+            @keyframes abc{
+                0%{background-color: blueviolet;}
+                25%{background-color: brown;}
+                50%{background-color: cadetblue;}
+                100%{background-color: chartreuse;}
+            }
+            .child3{
+                background-color:crimson ;
+                height: 200px;
+                width:200px;
+                border-radius: 20px;
+                position: relative;
+                bottom: 600px;
+                left: 150px;
+
+                
+            }
+            .child4{
+                background-color: darkblue;
+                position:relative;
+                width: 50px;
+                height: 50px;
+                left: 150px;
+                top: 50px;
+                bottom: 5000px;
+            }
+           
+        </style>
+        
+    </head>
+    <body>
+        <div class="parent">parent
+        <div class="child1">one</div>
+        <div class="child2">two</div>
+        <div class="child3">three</div>
+        <div class="child4">four</div>
+        </div>
+    </body>
+</html>
