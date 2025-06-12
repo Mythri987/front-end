@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Descendant selector */
+    .box p {
+      color: blue;
+    }
+
+    /* Child selector */
+    .box > p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>This is a direct child paragraph.</p>
+    <div>
+      <p>This is a nested (descendant) paragraph.</p>
+    </div>
+  </div>
+</body>
+</html>
